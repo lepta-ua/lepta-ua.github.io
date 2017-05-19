@@ -1,4 +1,5 @@
-<style>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
 *{
 	font-family: sans-serif;
 }
@@ -60,7 +61,7 @@ option{
     border-radius: 4px;
 }
 </style>
-<script src="https://cdn.rawgit.com/UABRO/domcom/master/source/domcom-min.js"></script>
+<script src="https://uabro.github.io/domcom-min.js"></script>
 <script>
 DC.ready(function(){
 'use strict';
@@ -71,8 +72,8 @@ var images = DC.temp({
 	}
 }).insertIn(app);
 var page = 1;// current page
-var step = 180;
-var max = 3389;
+var step = 150;
+var max = 4583;
 var totalpage = Math.ceil(max / step);
 var dcs = [];
 
@@ -160,7 +161,7 @@ var progress = DC.temp({
 				events: {
 					click(){
 						var n = dc.data.i;
-						window.open('https://vk.com/images/stickers/'+ n +'/256.png','_blank');
+						window.open('https://vk.com/images/stickers/'+ n +'/512.png','_blank');
 					},
 					load(){
 						var n = dc.data.i;
@@ -209,7 +210,7 @@ function show(length){
 	}
 }
 
-draw(1);
+draw(page);
 
 });
 </script>
@@ -222,3 +223,4 @@ draw(1);
 
 
 
+</head><body></body></html>
